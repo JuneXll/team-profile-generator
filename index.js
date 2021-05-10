@@ -141,9 +141,9 @@ function teamCompleted(){
         <body>
         <header class="d-flex justify-content-center bg-danger bg-gradient py-3 mb-4"><h1 class="fs-1 text-white">${myTeam[0]}</h1></header>
         <div class="d-flex justify-content-center">`
-
+        //Pushes the code about to the html array
         html.push(startOfHtml);
-
+        //Adds card for every employee
         for(let i=1;i<myTeam.length;i++){
             let teamInfo=
             `<div class="card m-2" style="width: 18rem;">
@@ -190,7 +190,7 @@ function teamCompleted(){
         </html>`
 
         html.push(endOfHtml);
-
+        //Builds index.html file with all the inputs
         fs.writeFile("index.html",html.join(""),function(error){
             if(error){
                 console.log("There was an error writing your file: ", error);
