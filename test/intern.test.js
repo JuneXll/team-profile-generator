@@ -5,7 +5,7 @@ describe("Intern class",()=>{
         const testSchool="um";
         const newInt= new Intern("test",1,"test@email.com",testSchool);
 
-        expected(newInt.testSchool).toMatch(testSchool);
+        expect(newInt.testSchool).toEqual(testSchool);
     })
 });
 
@@ -14,7 +14,7 @@ describe("getSchool",()=>{
         const testSchool="um";
         const newInt=new Intern("test",1,"test@email.com",testSchool);
 
-        expected(newInt.getSchool()).toMatch(testSchool);
+        expect(newInt.getSchool()).toEqual(testSchool);
     })
 });
 
@@ -23,7 +23,7 @@ describe("getRole",()=>{
         const testRole="Intern";
         const newInt=new Intern("June",1,"test@email.com","um");
 
-        expected(newInt.getRole()).toBe(testRole);
+        expect(newInt.getRole()).toEqual(testRole);
     })
 
 });

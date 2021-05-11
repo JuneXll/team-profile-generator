@@ -5,7 +5,7 @@ describe("Manager class",()=>{
         const testON=1;
         const newMan= new Manager("test",1,"test@email.com",testON);
 
-        expected(newMan.testON).toMatch(testSchool);
+        expect(newMan.testON).toMatch(testON);
     })
 });
 
@@ -14,7 +14,7 @@ describe("getOfficeNumber",()=>{
         const testON=1;
         const newMan=new Manager("test",1,"test@email.com",testON);
 
-        expected(newMan.getOfficeNumber()).toEqual(testON);
+        expect(newMan.getOfficeNumber()).toEqual(testON);
     })
 });
 
@@ -23,7 +23,7 @@ describe("getRole",()=>{
         const testRole="Manager";
         const newMan=new Manager("June",1,"test@email.com",1);
 
-        expected(newMan.getRole()).toBe(testRole);
+        expect(newMan.getRole()).toBe(testRole);
     })
 
 });

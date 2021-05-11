@@ -4,28 +4,28 @@ describe("Employee class", ()=>{
     it("Creates an object with employee information",()=>{
         const newEmployee= new Employee();
 
-        expected(typeOf(newEmployee)).toBe("object");
+        expect(typeOf(newEmployee)).toBe("object");
     })
 
     it("Should set name with constructor argument",()=>{
         const testName="June";
         const newEmployee= new Employee(testName);
 
-        expected(newEmployee.testName).toMatch(testName);
+        expect(newEmployee.testName).toBe(testName);
     })
 
     it("Should set id with constructor argument",()=>{
         const testId=1;
         const newEmployee=new Employee("test",testId);
 
-        expected(newEmployee.testId).toEqual(testId);
+        expect(newEmployee.testId).toBe(testId);
     })
 
     it("Should set email with constructor argument",()=>{
         const testEmail="test@email.com";
         const newEmployee=new Employee("test",1,testEmail);
 
-        expected(newEmployee.testEmail).toMatch(testEmail);
+        expect(newEmployee.testEmail).toBe(testEmail);
     })
 });
 
@@ -34,7 +34,7 @@ describe("getName",()=>{
         const testName="June";
         const newEmployee=new Employee(testName);
 
-        expected(newEmployee.getName()).toMatch(testName);
+        expect(newEmployee.getName()).toMatch(testName);
     })
 
 });
@@ -44,7 +44,7 @@ describe("getId",()=>{
         const testId=1;
         const newEmployee=new Employee("test",testId);
 
-        expected(newEmployee.getId()).toEqual(testId);
+        expect(newEmployee.getId()).toEqual(testId);
     })
 
 });
@@ -54,7 +54,7 @@ describe("getEmail",()=>{
         const testEmail="test@email";
         const newEmployee=new Employee("test",1,testEmail);
 
-        expected(newEmployee.getEmail()).toEqual(testEmail);
+        expect(newEmployee.getEmail()).toEqual(testEmail);
     })
 
 });
@@ -64,7 +64,7 @@ describe("getRole",()=>{
         const testRole="Employee";
         const newEmployee=new Employee("June",1,"test@email.com");
 
-        expected(newEmployee.getRole()).toBe(testRole);
+        expect(newEmployee.getRole()).toBe(testRole);
     })
 
 });
