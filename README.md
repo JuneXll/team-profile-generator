@@ -6,7 +6,7 @@
 This Team Profile Generator uses Node CLI to build a HTML team file based on the user's inputs. The generator will ask for names, emails, github username, and school based on if the member is an Engineer, a Manager or an Intern.
 
 ## Demonstrations
-<iframe src="https://drive.google.com/file/d/1PaZVo4pL7wvhZg_T2npe7SHSIc3T3FaY/preview" width="640" height="480"></iframe>
+
 
 Generated HTML page:
 
