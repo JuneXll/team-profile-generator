@@ -1,3 +1,4 @@
+
 # Team-Profile-Generator
 
 
@@ -6,6 +7,8 @@ This Team Profile Generator uses Node CLI to build a HTML team file based on the
 
 ## Demonstrations
 <iframe src="https://drive.google.com/file/d/1PaZVo4pL7wvhZg_T2npe7SHSIc3T3FaY/preview" width="640" height="480"></iframe>
+
+<img width="1436" alt="Browser result" src="https://user-images.githubusercontent.com/71652307/117847648-8c8b4f80-b250-11eb-938e-aa8487d7c410.png">
 
 ## Testing
 This program was built off off constructor functions and classes. The function for each Engineer, Manager and Intern was tested and passed all tests.
