@@ -156,7 +156,7 @@ function teamCompleted(){
                     </div>
                     <div class="card-body">
                         <li class="list-group-item id">ID: ${myTeam[i].id}</li>
-                        <li class="list-group-item email">Email:<a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></li>
+                        <li class="list-group-item email">Email: <a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></li>
                         <li class="list-group-item office-number">Office Number: ${myTeam[i].officeNumber}</li>  
                     </div>
                 </div>`
@@ -166,8 +166,8 @@ function teamCompleted(){
                     </div>
                     <div class="card-body">
                         <li class="list-group-item id">ID: ${myTeam[i].id}</li>
-                        <li class="list-group-item email">Email:<a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></li>
-                    <li class="list-group-item github">GitHub: ${myTeam[i].github}</li>  
+                        <li class="list-group-item email">Email: <a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></li>
+                    <li class="list-group-item github">GitHub: <a href="https://github.com/${myTeam[i].github}"> ${myTeam[i].github}</a></li>  
                     </div>
                 </div>`
                 } else if(myTeam[i].school){
@@ -176,7 +176,7 @@ function teamCompleted(){
                     </div>
                     <div class="card-body">
                         <li class="list-group-item id">ID: ${myTeam[i].id}</li>
-                        <li class="list-group-item email">Email:<a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></li>
+                        <li class="list-group-item email">Email: <a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></li>
                     <li class="list-group-item school">School: ${myTeam[i].school}</li>  
                     </div>
                 </div>`
