@@ -13,7 +13,7 @@ Generated HTML page:
 <img width="1200" alt="Browser result" src="https://user-images.githubusercontent.com/71652307/117847648-8c8b4f80-b250-11eb-938e-aa8487d7c410.png">
 
 ## Testing
-This program was built off off constructor functions and classes. The function for each Engineer, Manager and Intern was tested and passed all tests.
+This program was built off of constructor functions and classes. The function for each Engineer, Manager and Intern was tested and passed all tests.
 
 <img width="711" alt="passed test" src="https://user-images.githubusercontent.com/71652307/117845874-edb22380-b24e-11eb-94ef-34ef0713251c.png">
 
