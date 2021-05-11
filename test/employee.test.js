@@ -1,31 +1,31 @@
 const Employee=require("../lib/employee");
 
 describe("Employee class", ()=>{
-    it("Creates an object with employee information",()=>{
+    it("Creates a new instance of employee",()=>{
         const newEmployee= new Employee();
 
-        expect(typeOf(newEmployee)).toBe("object");
+        expect(typeof(newEmployee)).toBe("object");
     })
 
     it("Should set name with constructor argument",()=>{
         const testName="June";
         const newEmployee= new Employee(testName);
 
-        expect(newEmployee.testName).toBe(testName);
+        expect(newEmployee.name).toBe(testName);
     })
 
     it("Should set id with constructor argument",()=>{
         const testId=1;
         const newEmployee=new Employee("test",testId);
 
-        expect(newEmployee.testId).toBe(testId);
+        expect(newEmployee.id).toBe(testId);
     })
 
     it("Should set email with constructor argument",()=>{
         const testEmail="test@email.com";
         const newEmployee=new Employee("test",1,testEmail);
 
-        expect(newEmployee.testEmail).toBe(testEmail);
+        expect(newEmployee.email).toBe(testEmail);
     })
 });
 
@@ -34,7 +34,7 @@ describe("getName",()=>{
         const testName="June";
         const newEmployee=new Employee(testName);
 
-        expect(newEmployee.getName()).toMatch(testName);
+        expect(newEmployee.getName()).toBe(testName);
     })
 
 });
@@ -44,7 +44,7 @@ describe("getId",()=>{
         const testId=1;
         const newEmployee=new Employee("test",testId);
 
-        expect(newEmployee.getId()).toEqual(testId);
+        expect(newEmployee.getId()).toBe(testId);
     })
 
 });
@@ -54,7 +54,7 @@ describe("getEmail",()=>{
         const testEmail="test@email";
         const newEmployee=new Employee("test",1,testEmail);
 
-        expect(newEmployee.getEmail()).toEqual(testEmail);
+        expect(newEmployee.getEmail()).toBe(testEmail);
     })
 
 });

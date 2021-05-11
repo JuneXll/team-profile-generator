@@ -5,7 +5,7 @@ describe("Engineer class",()=>{
         const testGit="junexll";
         const newEngi= new Engineer("test",1,"test@email.com",testGit);
 
-        expect(newEngi.testGit).toMatch(testGit);
+        expect(newEngi.github).toBe(testGit);
     })
 });
 

@@ -2,10 +2,10 @@ const Intern=require("../lib/intern");
 
 describe("Intern class",()=>{
     it("Should set school with constructor argument",()=>{
-        const testSchool="um";
+        const testSchool="UM";
         const newInt= new Intern("test",1,"test@email.com",testSchool);
 
-        expect(newInt.testSchool).toEqual(testSchool);
+        expect(newInt.school).toBe(testSchool);
     })
 });
 
@@ -14,7 +14,7 @@ describe("getSchool",()=>{
         const testSchool="um";
         const newInt=new Intern("test",1,"test@email.com",testSchool);
 
-        expect(newInt.getSchool()).toEqual(testSchool);
+        expect(newInt.getSchool()).toBe(testSchool);
     })
 });
 
@@ -23,7 +23,7 @@ describe("getRole",()=>{
         const testRole="Intern";
         const newInt=new Intern("June",1,"test@email.com","um");
 
-        expect(newInt.getRole()).toEqual(testRole);
+        expect(newInt.getRole()).toBe(testRole);
     })
 
 });

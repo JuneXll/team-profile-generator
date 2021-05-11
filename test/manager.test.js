@@ -5,7 +5,7 @@ describe("Manager class",()=>{
         const testON=1;
         const newMan= new Manager("test",1,"test@email.com",testON);
 
-        expect(newMan.testON).toMatch(testON);
+        expect(newMan.officeNumber).toBe(testON);
     })
 });
 
@@ -14,7 +14,7 @@ describe("getOfficeNumber",()=>{
         const testON=1;
         const newMan=new Manager("test",1,"test@email.com",testON);
 
-        expect(newMan.getOfficeNumber()).toEqual(testON);
+        expect(newMan.getOfficeNumber()).toBe(testON);
     })
 });
 
